@@ -4,8 +4,6 @@ A small interactive **3D mini game** built with **React** and **Three.js** where
 
 The game focuses on **simple physics interactions**, keyboard controls, and a minimal gameplay loop.
 
----
-
 ## Gameplay
 
 Players control a rolling ball and must reach the finish platform while avoiding obstacles.
@@ -20,8 +18,6 @@ Physics makes the ball movement feel dynamic and responsive.
 
 Hidden boundary walls prevent the ball from falling off the level.
 
----
-
 ## Tech Stack
 
 - **React** – UI and component structure
@@ -29,8 +25,6 @@ Hidden boundary walls prevent the ball from falling off the level.
 - **React Three Fiber** – React renderer for Three.js
 - **Zustand** – Global state management
 - **Physics Engine** – For realistic movement and collisions
-
----
 
 ## Features
 
@@ -42,15 +36,12 @@ Hidden boundary walls prevent the ball from falling off the level.
 - **Boundary walls** to keep the ball inside the map
 - Lightweight **state management with Zustand**
 
----
-
 ## Game Objective
 
 Reach the **finish line as fast as possible**.
 
 The timer starts when the player begins moving and stops once the finish area is reached.
 
----
 
 ## Controls
 
@@ -62,9 +53,8 @@ The timer starts when the player begins moving and stops once the finish area is
 | D | Move Right |
 | Space | Jump |
 
----
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Clone the repository
 

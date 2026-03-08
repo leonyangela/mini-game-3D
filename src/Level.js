@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { useState, useRef, useMemo } from 'react'
+import React, { useState, useRef, useMemo } from 'react'
 import { CuboidCollider, RigidBody } from '@react-three/rapier'
 import { useFrame } from '@react-three/fiber'
 import { Float, Text, useGLTF } from '@react-three/drei'
@@ -190,7 +190,7 @@ export function BlockAxe({ position = [0, 0, 0] }) {
 }
 
 function Bounds({ length = 1 }) {
-    return <>
+    return <React.Fragment>
         <RigidBody type="fixed" restitution={0.2} friction={0}>
             <mesh
                 position={[2.15, 0.75, - (length * 2) + 2]}
@@ -220,7 +220,7 @@ function Bounds({ length = 1 }) {
                 friction={1}
             />
         </RigidBody>
-    </>
+    </React.Fragment>
 }
 
 export function Level({ count = 3, types = [BlockSpinner, BlockAxe, BlockLimbo], seed = 0 }) {
@@ -236,7 +236,7 @@ export function Level({ count = 3, types = [BlockSpinner, BlockAxe, BlockLimbo],
         return blocks
     }, [count, types])
 
-    return <>
+    return <React.Fragment>
         <BlockStart position={[0, 0, 0]} />
 
         {blocks.map((Block, index) => <Block key={index} position={[0, 0, - (index + 1) * 4]} />)}
@@ -250,5 +250,5 @@ export function Level({ count = 3, types = [BlockSpinner, BlockAxe, BlockLimbo],
         <BlockLimbo position={[0, 0, 8]} />
         <BlockAxe position={[0, 0, 4]} />
         <BlockEnd position={[0, 0, 0]} /> */}
-    </>
+    </React.Fragment>
 }

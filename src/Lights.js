@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
 export default function Lights() {
@@ -10,7 +10,7 @@ export default function Lights() {
         light.current.target.updateMatrixWorld()
     })
 
-    return <>
+    return <React.Fragment>
         <directionalLight
             ref={light}
             castShadow
@@ -25,5 +25,5 @@ export default function Lights() {
             shadow-camera-left={- 10}
         />
         <ambientLight intensity={0.5} />
-    </>
+    </React.Fragment>
 }

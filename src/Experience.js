@@ -5,14 +5,15 @@ import Lights from './Lights.js'
 import Player from './Player.js'
 
 import useGame from './stores/useGame.js'
+import React from 'react'
 
-export default function Experience() {
+const Experience = () => {
 
     const blocksCount = useGame((state) => state.blocksCount)
     const blocksSeed = useGame((state) => state.blocksSeed)
 
-    return <>
-        <color args={['#bdedfc']} attach="background" />
+    return <React.Fragment>
+        {/* <color args={['#bdedfc']} attach="background" /> */}
 
         <Physics >
             {/* <Debug /> */}
@@ -22,5 +23,7 @@ export default function Experience() {
         </Physics>
 
         {/* <Effects /> */}
-    </>
+    </React.Fragment>
 }
+
+export default Experience

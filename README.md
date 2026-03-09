@@ -4,6 +4,9 @@ A small interactive **3D mini game** built with **React** and **Three.js** where
 
 The game focuses on **simple physics interactions**, keyboard controls, and a minimal gameplay loop.
 
+## Demo
+<img width="1470" height="879" alt="Screenshot 2026-03-08 at 1 12 23 PM" src="https://github.com/user-attachments/assets/9c74c38b-931b-430f-ac7d-47d7b76eb7b5" />
+
 ## Gameplay
 
 Players control a rolling ball and must reach the finish platform while avoiding obstacles.
@@ -54,9 +57,7 @@ The timer starts when the player begins moving and stops once the finish area is
 | Space | Jump |
 
 
-## Getting Started
-
-### Clone the repository
+## Clone the repository
 
 ```bash
 git clone https://github.com/leonyangela/mini-game-3d.git
